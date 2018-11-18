@@ -12601,12 +12601,12 @@ sequence_length = 4</code></pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[36]:</div>
+<div class="prompt input_prompt">In&nbsp;[51]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Data params</span>
 <span class="c1"># Sequence Length</span>
-<span class="n">sequence_length</span> <span class="o">=</span> <span class="mi">20</span> <span class="c1"># of words in a sequence</span>
+<span class="n">sequence_length</span> <span class="o">=</span> <span class="mi">10</span> <span class="c1"># of words in a sequence</span>
 <span class="c1"># Batch Size</span>
 <span class="n">batch_size</span> <span class="o">=</span> <span class="mi">128</span>
 
@@ -12621,14 +12621,14 @@ sequence_length = 4</code></pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="prompt input_prompt">In&nbsp;[52]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Training parameters</span>
 <span class="c1"># Number of Epochs</span>
 <span class="n">num_epochs</span> <span class="o">=</span> <span class="mi">20</span>
 <span class="c1"># Learning Rate</span>
-<span class="n">learning_rate</span> <span class="o">=</span> <span class="mf">0.01</span>
+<span class="n">learning_rate</span> <span class="o">=</span> <span class="mf">0.001</span>
 
 <span class="c1"># Model parameters</span>
 <span class="c1"># Vocab size</span>
@@ -12636,9 +12636,9 @@ sequence_length = 4</code></pre>
 <span class="c1"># Output size</span>
 <span class="n">output_size</span> <span class="o">=</span> <span class="n">vocab_size</span>
 <span class="c1"># Embedding Dimension</span>
-<span class="n">embedding_dim</span> <span class="o">=</span> <span class="mi">256</span>
+<span class="n">embedding_dim</span> <span class="o">=</span> <span class="mi">150</span>
 <span class="c1"># Hidden Dimension</span>
-<span class="n">hidden_dim</span> <span class="o">=</span> <span class="mi">256</span>
+<span class="n">hidden_dim</span> <span class="o">=</span> <span class="mi">512</span>
 <span class="c1"># Number of RNN Layers</span>
 <span class="n">n_layers</span> <span class="o">=</span> <span class="mi">2</span>
 
@@ -12662,7 +12662,7 @@ sequence_length = 4</code></pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="prompt input_prompt">In&nbsp;[53]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -12701,525 +12701,525 @@ sequence_length = 4</code></pre>
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Training for 20 epoch(s)...
-Epoch:    1/20    Loss: 5.751850654602051
+Epoch:    1/20    Loss: 5.472135552406311
 
-Epoch:    1/20    Loss: 4.931958633899689
+Epoch:    1/20    Loss: 4.829738450050354
 
-Epoch:    1/20    Loss: 4.851636115550995
+Epoch:    1/20    Loss: 4.618095191001892
 
-Epoch:    1/20    Loss: 4.761444408893585
+Epoch:    1/20    Loss: 4.510555770874023
 
-Epoch:    1/20    Loss: 4.70182156419754
+Epoch:    1/20    Loss: 4.422390734672546
 
-Epoch:    1/20    Loss: 4.657757626533508
+Epoch:    1/20    Loss: 4.373011926174164
 
-Epoch:    1/20    Loss: 4.624678494930268
+Epoch:    1/20    Loss: 4.312123482704163
 
-Epoch:    1/20    Loss: 4.584531990528107
+Epoch:    1/20    Loss: 4.241213983535767
 
-Epoch:    1/20    Loss: 4.585173657417298
+Epoch:    1/20    Loss: 4.199897315025329
 
-Epoch:    1/20    Loss: 4.576801355838776
+Epoch:    1/20    Loss: 4.231744954586029
 
-Epoch:    1/20    Loss: 4.588975648880005
+Epoch:    1/20    Loss: 4.15471122264862
 
-Epoch:    1/20    Loss: 4.5671619348526
+Epoch:    1/20    Loss: 4.137640469074249
 
-Epoch:    1/20    Loss: 4.543201815128326
+Epoch:    1/20    Loss: 4.137457071781158
 
-Epoch:    2/20    Loss: 4.463818546419173
+Epoch:    2/20    Loss: 4.009818687527542
 
-Epoch:    2/20    Loss: 4.370999443531036
+Epoch:    2/20    Loss: 3.916447662353516
 
-Epoch:    2/20    Loss: 4.383141468048096
+Epoch:    2/20    Loss: 3.9096056723594668
 
-Epoch:    2/20    Loss: 4.352406639099121
+Epoch:    2/20    Loss: 3.9366410341262816
 
-Epoch:    2/20    Loss: 4.3701344933509825
+Epoch:    2/20    Loss: 3.895458438396454
 
-Epoch:    2/20    Loss: 4.353289906024933
+Epoch:    2/20    Loss: 3.892286762714386
 
-Epoch:    2/20    Loss: 4.376507646560669
+Epoch:    2/20    Loss: 3.8692169461250305
 
-Epoch:    2/20    Loss: 4.34805730676651
+Epoch:    2/20    Loss: 3.8864692516326906
 
-Epoch:    2/20    Loss: 4.363974365711212
+Epoch:    2/20    Loss: 3.8646915287971497
 
-Epoch:    2/20    Loss: 4.331147705078125
+Epoch:    2/20    Loss: 3.8462822194099426
 
-Epoch:    2/20    Loss: 4.362195697307587
+Epoch:    2/20    Loss: 3.8520244088172912
 
-Epoch:    2/20    Loss: 4.3530967969894405
+Epoch:    2/20    Loss: 3.8501527810096743
 
-Epoch:    2/20    Loss: 4.361222566127777
+Epoch:    2/20    Loss: 3.8415142164230347
 
-Epoch:    3/20    Loss: 4.313321196011837
+Epoch:    3/20    Loss: 3.7620479155128095
 
-Epoch:    3/20    Loss: 4.2793197646141055
+Epoch:    3/20    Loss: 3.6620262236595154
 
-Epoch:    3/20    Loss: 4.246841520309448
+Epoch:    3/20    Loss: 3.646174877643585
 
-Epoch:    3/20    Loss: 4.243001367092132
+Epoch:    3/20    Loss: 3.6505299553871153
 
-Epoch:    3/20    Loss: 4.277364436149597
+Epoch:    3/20    Loss: 3.652730469703674
 
-Epoch:    3/20    Loss: 4.2611996421813965
+Epoch:    3/20    Loss: 3.6731945548057556
 
-Epoch:    3/20    Loss: 4.255112018108368
+Epoch:    3/20    Loss: 3.663803975582123
 
-Epoch:    3/20    Loss: 4.2647662363052365
+Epoch:    3/20    Loss: 3.6723181142807007
 
-Epoch:    3/20    Loss: 4.2665598301887515
+Epoch:    3/20    Loss: 3.677119047164917
 
-Epoch:    3/20    Loss: 4.2626633510589595
+Epoch:    3/20    Loss: 3.698945617198944
 
-Epoch:    3/20    Loss: 4.2652417774200435
+Epoch:    3/20    Loss: 3.6828364214897156
 
-Epoch:    3/20    Loss: 4.255736728191375
+Epoch:    3/20    Loss: 3.6851722450256346
 
-Epoch:    3/20    Loss: 4.290766230583191
+Epoch:    3/20    Loss: 3.675968289375305
 
-Epoch:    4/20    Loss: 4.24070246497667
+Epoch:    4/20    Loss: 3.5761030522416375
 
-Epoch:    4/20    Loss: 4.208427178382873
+Epoch:    4/20    Loss: 3.4970247488021853
 
-Epoch:    4/20    Loss: 4.203194769859314
+Epoch:    4/20    Loss: 3.4834319977760315
 
-Epoch:    4/20    Loss: 4.214666907787323
+Epoch:    4/20    Loss: 3.520702435016632
 
-Epoch:    4/20    Loss: 4.215360938072204
+Epoch:    4/20    Loss: 3.4977708191871644
 
-Epoch:    4/20    Loss: 4.230976986408233
+Epoch:    4/20    Loss: 3.5000808582305907
 
-Epoch:    4/20    Loss: 4.223931141376496
+Epoch:    4/20    Loss: 3.504901670455933
 
-Epoch:    4/20    Loss: 4.210520711898804
+Epoch:    4/20    Loss: 3.533019208908081
 
-Epoch:    4/20    Loss: 4.216979583740234
+Epoch:    4/20    Loss: 3.536995480060577
 
-Epoch:    4/20    Loss: 4.256439218997955
+Epoch:    4/20    Loss: 3.547398781299591
 
-Epoch:    4/20    Loss: 4.2533646507263185
+Epoch:    4/20    Loss: 3.531715465068817
 
-Epoch:    4/20    Loss: 4.269891583442688
+Epoch:    4/20    Loss: 3.543953950881958
 
-Epoch:    4/20    Loss: 4.258612071990966
+Epoch:    4/20    Loss: 3.5380332045555116
 
-Epoch:    5/20    Loss: 4.2070207684401755
+Epoch:    5/20    Loss: 3.4505879411510394
 
-Epoch:    5/20    Loss: 4.171165765285492
+Epoch:    5/20    Loss: 3.3486334104537963
 
-Epoch:    5/20    Loss: 4.154736130714417
+Epoch:    5/20    Loss: 3.3504002299308775
 
-Epoch:    5/20    Loss: 4.196523740768432
+Epoch:    5/20    Loss: 3.3598910489082336
 
-Epoch:    5/20    Loss: 4.213490501403808
+Epoch:    5/20    Loss: 3.3763319716453553
 
-Epoch:    5/20    Loss: 4.233012260437012
+Epoch:    5/20    Loss: 3.3729764008522034
 
-Epoch:    5/20    Loss: 4.196876668930054
+Epoch:    5/20    Loss: 3.384170798778534
 
-Epoch:    5/20    Loss: 4.229396744251251
+Epoch:    5/20    Loss: 3.42644170331955
 
-Epoch:    5/20    Loss: 4.215216076374054
+Epoch:    5/20    Loss: 3.406827973365784
 
-Epoch:    5/20    Loss: 4.211666373729706
+Epoch:    5/20    Loss: 3.4172791028022766
 
-Epoch:    5/20    Loss: 4.227493540763855
+Epoch:    5/20    Loss: 3.426739622592926
 
-Epoch:    5/20    Loss: 4.245686215400696
+Epoch:    5/20    Loss: 3.4417239899635317
 
-Epoch:    5/20    Loss: 4.254408487796783
+Epoch:    5/20    Loss: 3.451629228115082
 
-Epoch:    6/20    Loss: 4.214992357112306
+Epoch:    6/20    Loss: 3.33250823700022
 
-Epoch:    6/20    Loss: 4.143861543178558
+Epoch:    6/20    Loss: 3.2358536796569823
 
-Epoch:    6/20    Loss: 4.180596098423004
+Epoch:    6/20    Loss: 3.260165002822876
 
-Epoch:    6/20    Loss: 4.175073035240174
+Epoch:    6/20    Loss: 3.2453909096717832
 
-Epoch:    6/20    Loss: 4.1856626362800595
+Epoch:    6/20    Loss: 3.2805098209381103
 
-Epoch:    6/20    Loss: 4.178243235111236
+Epoch:    6/20    Loss: 3.284086911201477
 
-Epoch:    6/20    Loss: 4.195355502128601
+Epoch:    6/20    Loss: 3.297683289051056
 
-Epoch:    6/20    Loss: 4.199568593025208
+Epoch:    6/20    Loss: 3.29274423456192
 
-Epoch:    6/20    Loss: 4.21120392036438
+Epoch:    6/20    Loss: 3.3158574504852294
 
-Epoch:    6/20    Loss: 4.22387570142746
+Epoch:    6/20    Loss: 3.3093056292533873
 
-Epoch:    6/20    Loss: 4.239904362201691
+Epoch:    6/20    Loss: 3.3439286098480223
 
-Epoch:    6/20    Loss: 4.2476646752357485
+Epoch:    6/20    Loss: 3.3513877115249633
 
-Epoch:    6/20    Loss: 4.238480917930603
+Epoch:    6/20    Loss: 3.3482111515998842
 
-Epoch:    7/20    Loss: 4.207115835203598
+Epoch:    7/20    Loss: 3.249299222839875
 
-Epoch:    7/20    Loss: 4.156372582912445
+Epoch:    7/20    Loss: 3.1570632104873657
 
-Epoch:    7/20    Loss: 4.16871671628952
+Epoch:    7/20    Loss: 3.155822316169739
 
-Epoch:    7/20    Loss: 4.1871029624938965
+Epoch:    7/20    Loss: 3.1754095335006713
 
-Epoch:    7/20    Loss: 4.181703189849854
+Epoch:    7/20    Loss: 3.197656253814697
 
-Epoch:    7/20    Loss: 4.157436295986176
+Epoch:    7/20    Loss: 3.1984117918014525
 
-Epoch:    7/20    Loss: 4.193593803882599
+Epoch:    7/20    Loss: 3.2054606757164
 
-Epoch:    7/20    Loss: 4.194462073326111
+Epoch:    7/20    Loss: 3.231949903488159
 
-Epoch:    7/20    Loss: 4.20869638299942
+Epoch:    7/20    Loss: 3.2300118527412414
 
-Epoch:    7/20    Loss: 4.219770833015442
+Epoch:    7/20    Loss: 3.2349152212142944
 
-Epoch:    7/20    Loss: 4.229429135799408
+Epoch:    7/20    Loss: 3.247142185688019
 
-Epoch:    7/20    Loss: 4.244959876537323
+Epoch:    7/20    Loss: 3.262483073234558
 
-Epoch:    7/20    Loss: 4.255427257537842
+Epoch:    7/20    Loss: 3.2881334042549133
 
-Epoch:    8/20    Loss: 4.219569630421106
+Epoch:    8/20    Loss: 3.1633572925355042
 
-Epoch:    8/20    Loss: 4.15385870552063
+Epoch:    8/20    Loss: 3.067860065937042
 
-Epoch:    8/20    Loss: 4.144608768463135
+Epoch:    8/20    Loss: 3.073851481437683
 
-Epoch:    8/20    Loss: 4.140474031925201
+Epoch:    8/20    Loss: 3.107142409324646
 
-Epoch:    8/20    Loss: 4.1997274513244625
+Epoch:    8/20    Loss: 3.1219642267227172
 
-Epoch:    8/20    Loss: 4.215593126773834
+Epoch:    8/20    Loss: 3.1347150139808653
 
-Epoch:    8/20    Loss: 4.205725269317627
+Epoch:    8/20    Loss: 3.1524827489852907
 
-Epoch:    8/20    Loss: 4.221325865268708
+Epoch:    8/20    Loss: 3.1533809003829956
 
-Epoch:    8/20    Loss: 4.2094497356414795
+Epoch:    8/20    Loss: 3.1630337772369383
 
-Epoch:    8/20    Loss: 4.209582186698913
+Epoch:    8/20    Loss: 3.1774587769508362
 
-Epoch:    8/20    Loss: 4.240846255302429
+Epoch:    8/20    Loss: 3.1962805728912356
 
-Epoch:    8/20    Loss: 4.223998227119446
+Epoch:    8/20    Loss: 3.210417154788971
 
-Epoch:    8/20    Loss: 4.268127714157105
+Epoch:    8/20    Loss: 3.2154830403327943
 
-Epoch:    9/20    Loss: 4.199300542335392
+Epoch:    9/20    Loss: 3.1147664122291148
 
-Epoch:    9/20    Loss: 4.170000833511352
+Epoch:    9/20    Loss: 3.009410517692566
 
-Epoch:    9/20    Loss: 4.160495557308197
+Epoch:    9/20    Loss: 3.0267617778778075
 
-Epoch:    9/20    Loss: 4.183929162025452
+Epoch:    9/20    Loss: 3.0560407767295836
 
-Epoch:    9/20    Loss: 4.203428637981415
+Epoch:    9/20    Loss: 3.062546561717987
 
-Epoch:    9/20    Loss: 4.171570300579071
+Epoch:    9/20    Loss: 3.0772450776100158
 
-Epoch:    9/20    Loss: 4.204511194229126
+Epoch:    9/20    Loss: 3.0974989657402037
 
-Epoch:    9/20    Loss: 4.2018364744186405
+Epoch:    9/20    Loss: 3.0802701268196104
 
-Epoch:    9/20    Loss: 4.226484403133393
+Epoch:    9/20    Loss: 3.1088818411827086
 
-Epoch:    9/20    Loss: 4.231935069561005
+Epoch:    9/20    Loss: 3.111181318283081
 
-Epoch:    9/20    Loss: 4.226031664848327
+Epoch:    9/20    Loss: 3.134870852947235
 
-Epoch:    9/20    Loss: 4.239058243751526
+Epoch:    9/20    Loss: 3.174401725292206
 
-Epoch:    9/20    Loss: 4.231859062194824
+Epoch:    9/20    Loss: 3.1514203157424925
 
-Epoch:   10/20    Loss: 4.207639877272095
+Epoch:   10/20    Loss: 3.0487186185346666
 
-Epoch:   10/20    Loss: 4.149126001358033
+Epoch:   10/20    Loss: 2.9585874133110046
 
-Epoch:   10/20    Loss: 4.155443671703338
+Epoch:   10/20    Loss: 2.9939139251708986
 
-Epoch:   10/20    Loss: 4.182538135051727
+Epoch:   10/20    Loss: 2.9822231197357176
 
-Epoch:   10/20    Loss: 4.181912277698517
+Epoch:   10/20    Loss: 3.0198637895584106
 
-Epoch:   10/20    Loss: 4.176950553417206
+Epoch:   10/20    Loss: 3.018775686740875
 
-Epoch:   10/20    Loss: 4.194021377563477
+Epoch:   10/20    Loss: 3.031003643512726
 
-Epoch:   10/20    Loss: 4.191902482509613
+Epoch:   10/20    Loss: 3.0394568395614625
 
-Epoch:   10/20    Loss: 4.199350039482117
+Epoch:   10/20    Loss: 3.0804892463684084
 
-Epoch:   10/20    Loss: 4.229719349861145
+Epoch:   10/20    Loss: 3.0871527819633484
 
-Epoch:   10/20    Loss: 4.2086205163002015
+Epoch:   10/20    Loss: 3.0942201075553895
 
-Epoch:   10/20    Loss: 4.241718807220459
+Epoch:   10/20    Loss: 3.095942539215088
 
-Epoch:   10/20    Loss: 4.235760824680328
+Epoch:   10/20    Loss: 3.110791509628296
 
-Epoch:   11/20    Loss: 4.202811380165896
+Epoch:   11/20    Loss: 3.020967495822808
 
-Epoch:   11/20    Loss: 4.158367004394531
+Epoch:   11/20    Loss: 2.9189688124656676
 
-Epoch:   11/20    Loss: 4.145874999523163
+Epoch:   11/20    Loss: 2.921322160243988
 
-Epoch:   11/20    Loss: 4.1994936242103575
+Epoch:   11/20    Loss: 2.9610921759605406
 
-Epoch:   11/20    Loss: 4.173503338336944
+Epoch:   11/20    Loss: 2.9686634106636047
 
-Epoch:   11/20    Loss: 4.194317215919495
+Epoch:   11/20    Loss: 2.9862903971672057
 
-Epoch:   11/20    Loss: 4.1613901085853575
+Epoch:   11/20    Loss: 2.997420485019684
 
-Epoch:   11/20    Loss: 4.203349633216858
+Epoch:   11/20    Loss: 2.9911379261016844
 
-Epoch:   11/20    Loss: 4.201211946487427
+Epoch:   11/20    Loss: 3.0251931037902833
 
-Epoch:   11/20    Loss: 4.215230227947235
+Epoch:   11/20    Loss: 3.0227595748901366
 
-Epoch:   11/20    Loss: 4.234958349227905
+Epoch:   11/20    Loss: 3.0409391169548035
 
-Epoch:   11/20    Loss: 4.240302892684936
+Epoch:   11/20    Loss: 3.0737082982063293
 
-Epoch:   11/20    Loss: 4.237806297779083
+Epoch:   11/20    Loss: 3.063046754837036
 
-Epoch:   12/20    Loss: 4.201955422036296
+Epoch:   12/20    Loss: 2.9670093172720957
 
-Epoch:   12/20    Loss: 4.135482818603515
+Epoch:   12/20    Loss: 2.874421779632568
 
-Epoch:   12/20    Loss: 4.143563517093659
+Epoch:   12/20    Loss: 2.9112483386993406
 
-Epoch:   12/20    Loss: 4.164677414417267
+Epoch:   12/20    Loss: 2.901847623348236
 
-Epoch:   12/20    Loss: 4.187508470058441
+Epoch:   12/20    Loss: 2.928513889312744
 
-Epoch:   12/20    Loss: 4.173632566928863
+Epoch:   12/20    Loss: 2.9469233193397524
 
-Epoch:   12/20    Loss: 4.197002265453339
+Epoch:   12/20    Loss: 2.953932853221893
 
-Epoch:   12/20    Loss: 4.215424652576447
+Epoch:   12/20    Loss: 2.9705183148384093
 
-Epoch:   12/20    Loss: 4.189550413608551
+Epoch:   12/20    Loss: 2.9962588090896607
 
-Epoch:   12/20    Loss: 4.207612205982208
+Epoch:   12/20    Loss: 2.9984957995414736
 
-Epoch:   12/20    Loss: 4.228457602977753
+Epoch:   12/20    Loss: 2.9973653459548952
 
-Epoch:   12/20    Loss: 4.215051498413086
+Epoch:   12/20    Loss: 3.0225573410987856
 
-Epoch:   12/20    Loss: 4.2367083735466
+Epoch:   12/20    Loss: 3.0303801159858703
 
-Epoch:   13/20    Loss: 4.2019619914646364
+Epoch:   13/20    Loss: 2.9390057538192953
 
-Epoch:   13/20    Loss: 4.144198411941528
+Epoch:   13/20    Loss: 2.843802550315857
 
-Epoch:   13/20    Loss: 4.16753569984436
+Epoch:   13/20    Loss: 2.8642704977989197
 
-Epoch:   13/20    Loss: 4.18305826330185
+Epoch:   13/20    Loss: 2.893929790019989
 
-Epoch:   13/20    Loss: 4.164009527683258
+Epoch:   13/20    Loss: 2.878285997390747
 
-Epoch:   13/20    Loss: 4.178216528892517
+Epoch:   13/20    Loss: 2.916011622905731
 
-Epoch:   13/20    Loss: 4.174128758430481
+Epoch:   13/20    Loss: 2.921062051296234
 
-Epoch:   13/20    Loss: 4.201467801094055
+Epoch:   13/20    Loss: 2.9386638417243955
 
-Epoch:   13/20    Loss: 4.2039361696243285
+Epoch:   13/20    Loss: 2.9390546779632567
 
-Epoch:   13/20    Loss: 4.243018725395203
+Epoch:   13/20    Loss: 2.954202224254608
 
-Epoch:   13/20    Loss: 4.232825285434723
+Epoch:   13/20    Loss: 2.9765270309448244
 
-Epoch:   13/20    Loss: 4.2201157503128055
+Epoch:   13/20    Loss: 2.989134404182434
 
-Epoch:   13/20    Loss: 4.229448206901551
+Epoch:   13/20    Loss: 2.991910530567169
 
-Epoch:   14/20    Loss: 4.183988818197181
+Epoch:   14/20    Loss: 2.9081117973977197
 
-Epoch:   14/20    Loss: 4.130184501647949
+Epoch:   14/20    Loss: 2.8267433767318724
 
-Epoch:   14/20    Loss: 4.1662896857261655
+Epoch:   14/20    Loss: 2.8266275863647463
 
-Epoch:   14/20    Loss: 4.174599373340607
+Epoch:   14/20    Loss: 2.8380060081481933
 
-Epoch:   14/20    Loss: 4.160277973175049
+Epoch:   14/20    Loss: 2.8502668571472167
 
-Epoch:   14/20    Loss: 4.18975788116455
+Epoch:   14/20    Loss: 2.866716603755951
 
-Epoch:   14/20    Loss: 4.180938425064087
+Epoch:   14/20    Loss: 2.8827828612327577
 
-Epoch:   14/20    Loss: 4.219429712772369
+Epoch:   14/20    Loss: 2.8973200373649597
 
-Epoch:   14/20    Loss: 4.20767673778534
+Epoch:   14/20    Loss: 2.933089777469635
 
-Epoch:   14/20    Loss: 4.222869482517242
+Epoch:   14/20    Loss: 2.92920085811615
 
-Epoch:   14/20    Loss: 4.205528354167938
+Epoch:   14/20    Loss: 2.9428944053649904
 
-Epoch:   14/20    Loss: 4.241764308452606
+Epoch:   14/20    Loss: 2.9475474433898925
 
-Epoch:   14/20    Loss: 4.240774712085724
+Epoch:   14/20    Loss: 2.9605979895591736
 
-Epoch:   15/20    Loss: 4.198670984175675
+Epoch:   15/20    Loss: 2.8584896920266165
 
-Epoch:   15/20    Loss: 4.182081316947937
+Epoch:   15/20    Loss: 2.778091705322266
 
-Epoch:   15/20    Loss: 4.180309986114502
+Epoch:   15/20    Loss: 2.819717248439789
 
-Epoch:   15/20    Loss: 4.164125950336456
+Epoch:   15/20    Loss: 2.8383582029342653
 
-Epoch:   15/20    Loss: 4.206550608634949
+Epoch:   15/20    Loss: 2.8311355595588683
 
-Epoch:   15/20    Loss: 4.166273251533508
+Epoch:   15/20    Loss: 2.8404336829185484
 
-Epoch:   15/20    Loss: 4.1861773872375485
+Epoch:   15/20    Loss: 2.8614699940681456
 
-Epoch:   15/20    Loss: 4.195053235530853
+Epoch:   15/20    Loss: 2.884109715938568
 
-Epoch:   15/20    Loss: 4.206361622333526
+Epoch:   15/20    Loss: 2.875858416080475
 
-Epoch:   15/20    Loss: 4.20965548992157
+Epoch:   15/20    Loss: 2.8854958453178408
 
-Epoch:   15/20    Loss: 4.210672734260559
+Epoch:   15/20    Loss: 2.900781240940094
 
-Epoch:   15/20    Loss: 4.250880838871002
+Epoch:   15/20    Loss: 2.930610456943512
 
-Epoch:   15/20    Loss: 4.231665918350219
+Epoch:   15/20    Loss: 2.936618541240692
 
-Epoch:   16/20    Loss: 4.189795896610854
+Epoch:   16/20    Loss: 2.834110408867599
 
-Epoch:   16/20    Loss: 4.169754444122314
+Epoch:   16/20    Loss: 2.7573193073272706
 
-Epoch:   16/20    Loss: 4.151688327789307
+Epoch:   16/20    Loss: 2.7890471658706666
 
-Epoch:   16/20    Loss: 4.157769038677215
+Epoch:   16/20    Loss: 2.7969251308441163
 
-Epoch:   16/20    Loss: 4.194674480438232
+Epoch:   16/20    Loss: 2.802282760620117
 
-Epoch:   16/20    Loss: 4.183594699859619
+Epoch:   16/20    Loss: 2.818749882698059
 
-Epoch:   16/20    Loss: 4.183083982467651
+Epoch:   16/20    Loss: 2.836139657497406
 
-Epoch:   16/20    Loss: 4.215955240726471
+Epoch:   16/20    Loss: 2.841770576953888
 
-Epoch:   16/20    Loss: 4.190005326747895
+Epoch:   16/20    Loss: 2.860832290649414
 
-Epoch:   16/20    Loss: 4.2080029773712155
+Epoch:   16/20    Loss: 2.87220960521698
 
-Epoch:   16/20    Loss: 4.232214231014252
+Epoch:   16/20    Loss: 2.8887120327949525
 
-Epoch:   16/20    Loss: 4.233037649154663
+Epoch:   16/20    Loss: 2.887023185253143
 
-Epoch:   16/20    Loss: 4.235171088218689
+Epoch:   16/20    Loss: 2.914956789493561
 
-Epoch:   17/20    Loss: 4.1974290275967405
+Epoch:   17/20    Loss: 2.8092570710846516
 
-Epoch:   17/20    Loss: 4.151293406009674
+Epoch:   17/20    Loss: 2.7203968534469603
 
-Epoch:   17/20    Loss: 4.162414266109467
+Epoch:   17/20    Loss: 2.764486789703369
 
-Epoch:   17/20    Loss: 4.1586321501731875
+Epoch:   17/20    Loss: 2.766387311935425
 
-Epoch:   17/20    Loss: 4.170885245800019
+Epoch:   17/20    Loss: 2.784918502807617
 
-Epoch:   17/20    Loss: 4.19804800415039
+Epoch:   17/20    Loss: 2.79154461145401
 
-Epoch:   17/20    Loss: 4.186588915348053
+Epoch:   17/20    Loss: 2.8141318430900575
 
-Epoch:   17/20    Loss: 4.197661845684052
+Epoch:   17/20    Loss: 2.822852628707886
 
-Epoch:   17/20    Loss: 4.207461583614349
+Epoch:   17/20    Loss: 2.8422790274620056
 
-Epoch:   17/20    Loss: 4.230176769733429
+Epoch:   17/20    Loss: 2.838776975631714
 
-Epoch:   17/20    Loss: 4.222970296382904
+Epoch:   17/20    Loss: 2.8768679823875427
 
-Epoch:   17/20    Loss: 4.22384673166275
+Epoch:   17/20    Loss: 2.8597798390388487
 
-Epoch:   17/20    Loss: 4.244385596752167
+Epoch:   17/20    Loss: 2.879256938934326
 
-Epoch:   18/20    Loss: 4.205885593367066
+Epoch:   18/20    Loss: 2.7953252164941085
 
-Epoch:   18/20    Loss: 4.153791006088257
+Epoch:   18/20    Loss: 2.7096742119789123
 
-Epoch:   18/20    Loss: 4.165789486885071
+Epoch:   18/20    Loss: 2.7287229356765748
 
-Epoch:   18/20    Loss: 4.158185511589051
+Epoch:   18/20    Loss: 2.751642632961273
 
-Epoch:   18/20    Loss: 4.1607341656684875
+Epoch:   18/20    Loss: 2.7686956951618193
 
-Epoch:   18/20    Loss: 4.168821187019348
+Epoch:   18/20    Loss: 2.772597972393036
 
-Epoch:   18/20    Loss: 4.206095936298371
+Epoch:   18/20    Loss: 2.7744206948280334
 
-Epoch:   18/20    Loss: 4.20212671995163
+Epoch:   18/20    Loss: 2.8152178740501403
 
-Epoch:   18/20    Loss: 4.1872586841583255
+Epoch:   18/20    Loss: 2.805230707168579
 
-Epoch:   18/20    Loss: 4.228407091617584
+Epoch:   18/20    Loss: 2.8290498824119568
 
-Epoch:   18/20    Loss: 4.208187252044678
+Epoch:   18/20    Loss: 2.850217255115509
 
-Epoch:   18/20    Loss: 4.2299056758880615
+Epoch:   18/20    Loss: 2.8426012177467346
 
-Epoch:   18/20    Loss: 4.255818613529206
+Epoch:   18/20    Loss: 2.8482795643806456
 
-Epoch:   19/20    Loss: 4.189266109614181
+Epoch:   19/20    Loss: 2.779473784046153
 
-Epoch:   19/20    Loss: 4.15494493675232
+Epoch:   19/20    Loss: 2.7023136506080627
 
-Epoch:   19/20    Loss: 4.183323724746704
+Epoch:   19/20    Loss: 2.718489356994629
 
-Epoch:   19/20    Loss: 4.17504962682724
+Epoch:   19/20    Loss: 2.71734580039978
 
-Epoch:   19/20    Loss: 4.199311199188233
+Epoch:   19/20    Loss: 2.743828649520874
 
-Epoch:   19/20    Loss: 4.195507532119751
+Epoch:   19/20    Loss: 2.754926634311676
 
-Epoch:   19/20    Loss: 4.186240871429443
+Epoch:   19/20    Loss: 2.765559373855591
 
-Epoch:   19/20    Loss: 4.210376378536225
+Epoch:   19/20    Loss: 2.7767737398147583
 
-Epoch:   19/20    Loss: 4.217579730033875
+Epoch:   19/20    Loss: 2.791549617767334
 
-Epoch:   19/20    Loss: 4.22024053812027
+Epoch:   19/20    Loss: 2.809727821826935
 
-Epoch:   19/20    Loss: 4.2305595483779905
+Epoch:   19/20    Loss: 2.8181355786323548
 
-Epoch:   19/20    Loss: 4.223007100105286
+Epoch:   19/20    Loss: 2.8361784181594847
 
-Epoch:   19/20    Loss: 4.2356262893676755
+Epoch:   19/20    Loss: 2.8441606640815733
 
-Epoch:   20/20    Loss: 4.179672307151267
+Epoch:   20/20    Loss: 2.7550695006446326
 
-Epoch:   20/20    Loss: 4.154385740756989
+Epoch:   20/20    Loss: 2.664333598136902
 
-Epoch:   20/20    Loss: 4.16867361164093
+Epoch:   20/20    Loss: 2.681212062597275
 
-Epoch:   20/20    Loss: 4.193613935947418
+Epoch:   20/20    Loss: 2.7143575510978697
 
-Epoch:   20/20    Loss: 4.186615123271942
+Epoch:   20/20    Loss: 2.7228953309059145
 
-Epoch:   20/20    Loss: 4.198260915279389
+Epoch:   20/20    Loss: 2.7434857339859007
 
-Epoch:   20/20    Loss: 4.1954301419258115
+Epoch:   20/20    Loss: 2.74547114276886
 
-Epoch:   20/20    Loss: 4.2081211218833925
+Epoch:   20/20    Loss: 2.746069263935089
 
-Epoch:   20/20    Loss: 4.226670199871063
+Epoch:   20/20    Loss: 2.7725921359062196
 
-Epoch:   20/20    Loss: 4.211247447967529
+Epoch:   20/20    Loss: 2.788877460002899
 
-Epoch:   20/20    Loss: 4.214601133823395
+Epoch:   20/20    Loss: 2.8092442746162414
 
-Epoch:   20/20    Loss: 4.224986115932465
+Epoch:   20/20    Loss: 2.8067874541282656
 
-Epoch:   20/20    Loss: 4.223879081726074
+Epoch:   20/20    Loss: 2.828663395881653
 
 Model Trained and Saved
 </pre>
@@ -13258,23 +13258,28 @@ Model Trained and Saved
 <p><strong>Answer:</strong></p>
 <p>Hyperparameters</p>
 <ul>
-<li><p>sequence_length = 20
-The shorter length of sequence learns faster. I tried with sequence_length=25, 30 but in my case, 20 works the best.</p>
-</li>
+<li>sequence_length = 10
+The shorter length of sequence learns faster. I tried with sequence_length=25, 30 but in my case, 20 works the best.
+(fix) after review by mentors from Udacity, I've set to 10.</li>
+</ul>
+<ul>
 <li><p>batch_size = 128
 I have tried batch_size of 128, 256, 512 and the performance did great when it's 128.</p>
 </li>
 <li><p>num_epochs = 20
 The higher number of epochs would do better on performance. I could increase up to maybe 100, but I am worried if it's too overfitted. Ofcourse I could do early stopping when validation loss goes up. It's mostly a matter of time. I could try with more epochs but I just set to be 20 for now.</p>
 </li>
-<li><p>learning_rate = 0.01
-Tried learning_rate of 0.001 and it seems to be slow on learning. So, I set to 0.01 and it performs the best.</p>
+<li><p>learning_rate = 0.001
+Tried learning_rate of 0.001 and it seems to be slow on learning. So, I set to 0.01 and it performs the best.
+(fix) after review by mentors from Udacity, I've set to 0.001</p>
 </li>
-<li><p>embedding_dim = 256
-256 works pretty well for me. I have tried like 500 but it did not work out well.</p>
+<li><p>embedding_dim = 150
+256 works pretty well for me. I have tried like 500 but it did not work out well.
+(fix) after review by mentors from Udacity, I've set to 150</p>
 </li>
-<li><p>hidden_dim = 256
-I have tried with 128, 512 but 256 works the best in this case.</p>
+<li><p>hidden_dim = 512
+I have tried with 128, 512 but 256 works the best in this case.
+(fix) after review by mentors from Udacity, I've set to 512</p>
 </li>
 <li><p>n_layers = 2
 Tried 3, 4, 5 but 2 performs the best.</p>
@@ -13296,7 +13301,7 @@ Tried 3, 4, 5 but 2 performs the best.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[45]:</div>
+<div class="prompt input_prompt">In&nbsp;[54]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -13327,7 +13332,7 @@ Tried 3, 4, 5 but 2 performs the best.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="prompt input_prompt">In&nbsp;[55]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -13394,7 +13399,7 @@ Tried 3, 4, 5 but 2 performs the best.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[48]:</div>
+<div class="prompt input_prompt">In&nbsp;[56]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -13491,7 +13496,7 @@ Tried 3, 4, 5 but 2 performs the best.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[49]:</div>
+<div class="prompt input_prompt">In&nbsp;[57]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># run the cell multiple times to get different results!</span>
@@ -13520,65 +13525,59 @@ Tried 3, 4, 5 but 2 performs the best.</p>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>jerry: it.
+<pre>jerry: bein&#39; thousands of them. you know what? you got that straight, you got the whole thing. you know how to write these things that you are helping.
 
-jerry: i can&#39;t be it!! i don&#39;t know.
+jerry: what?
 
-elaine:(to kramer) i was going to be the way!
+kramer:(animated) i don&#39;t know...
 
-elaine: well, i don&#39;t have to the car. you got it, and i have you have any of a couple of of a lot of, i think you have no!
+jerry:(interrupts shout) what?
 
-woman:(to the door)
+elaine: what?
 
-jerry: well, it&#39;s a little of a little.....
+elaine: i think i can get it.
 
-elaine: i don&#39;t know, i got a little, i&#39;m going to be it? i don&#39;t know, i don&#39;t know, i don&#39;t know.
+jerry:(still looking at the tv) what are you doing here!
 
-george: well, you know what the same?
+jerry: i&#39;m sorry about george.
 
-elaine: i can&#39;t be it.
+george: i can&#39;t believe i&#39;m gonna do that.
 
-kramer:(looking over the phone)
+jerry: what?
 
-kramer: yeah, and......
+george: i think i am. i know that.
 
-george: yeah. you can go.
+kramer: yeah.
 
-elaine: well it&#39;s not a little thing.
+elaine: oh yeah...
 
-jerry: well, and i know, you can go.
+jerry:(cont&#39;d) oh, i got the machine again.(kramer enters. george takes her towel and throws his hands off)
 
-jerry: i can&#39;t get a big of a little, i think you get a big of me!(george, jerry and the table)
+george:(to kramer) what?
 
-jerry: yeah, you know, i&#39;m gonna see what you don&#39;t know what i got it to be.
+elaine: well, it&#39;s a valuable appendage, it&#39;s an incredible skill.
 
-jerry: well, and you don&#39;t like that.
+elaine: i know, i know, but i have to get the discount. i mean, i don&#39;t know. but i&#39;m just walking around beyond a lump, and i don&#39;t know if i could be a professor, and a half a half extra candy bar fortune, and we both know how much i appreciate it!(laughs)
 
-elaine: well, i think you got it to do it.
+george: what is this all about?
 
-kramer: hey, i was not.(he leaves)
+jerry: i don&#39;t want to see it. you should be ashamed of yourself. i mean, i was just trying to get a smile to do. i have to be unfettered.
 
-kramer: oh, i got it.
+george: what, are you kidding? i can&#39;t believe i&#39;m doing this.
 
-kramer: oh, i don&#39;t know, and, i&#39;m a little.
+jerry:(pleading) oh.
 
-george: oh, i was going to see what?
+george:(smiling) i don&#39;t know, i don&#39;t know how to thank you.
 
-kramer: oh, yeah.
+jerry:(to kramer) you know, i think i can help that guy. i can&#39;t do it!(the mechanic grows uneasy)
 
-george: well, you know, i don&#39;t know, i don&#39;t know....
+[setting: dealership car]
 
-jerry: i can&#39;t go.
+rick:(cutting herself from her face)
 
-george: i can&#39;t be you, and you get some?
+kramer: hey, hey.
 
-kramer:(to the bathroom) hey!!
-
-kramer:(to jerry)
-
-elaine: i don&#39;t think you.
-
-jerry:(to the couch) i don&#39;t
+george: hey
 </pre>
 </div>
 </div>
@@ -13598,7 +13597,7 @@ jerry:(to the couch) i don&#39;t
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[50]:</div>
+<div class="prompt input_prompt">In&nbsp;[58]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># save script to a text file</span>
